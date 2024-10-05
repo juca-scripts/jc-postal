@@ -7,6 +7,7 @@ Install
 2. Using the /postaleditor command to edit the postal style
 
 Others resources
+
 JC-Nails - https://forum.cfx.re/t/paid-esx-qb-jc-nails/4825232
 
 JC-Peds - https://forum.cfx.re/t/paid-esx-qb-jc-peds/5270385
