@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JC Scripts</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div id="editable">
+            <h2 class="text-editable">Editable postal mode</h2>
+            <div class="d-center mt-2">
+                <b class="text-editable">Background Colour: </b>
+                <input id="background" type="color" onchange="changeSetting('background', this.value)">
+            </div>
+            <div class="d-center mt-2">
+                <b class="text-editable">Background opacity: </b>
+                <input id="opacity" type="number" min="0" step="0.1" value="1.0" max="1.0" onchange="changeSetting('opacity', this.value)">
+            </div>
+            <div class="d-center mt-2">
+                <b class="text-editable">Text colour: </b>
+                <input id="text" type="color" onchange="changeSetting('text', this.value)">
+            </div>
+            <div class="d-center mt-2">
+                <b class="text-editable">Text size: </b>
+                <input id="text_size" type="number" min="0" value="16" onchange="changeSetting('text_size', this.value)">
+            </div>
+            <div class="d-center mt-2">
+                <b class="text-editable">Box border radius: </b>
+                <input id="box_border" type="number" min="0" value=8 onchange="changeSetting('box_border', this.value)">
+            </div>
+            <div class="d-center mt-2">
+                <b class="text-editable">Box padding: </b>
+                <input id="box_padding" type="number" min="0" value=8 onchange="changeSetting('box_padding', this.value)">
+            </div>
+            <div class="d-center mt-2">
+                <button type="button" class="btn btn-save" onclick="save()">Save</button>
+                <button type="button" class="btn btn-cancel" onclick="cancel()">Cancel</button>
+            </div>
+        </div>
+
+        <div id="draggable">
+            <div class="drawable-container">
+                <a class="postal-text" id="postal"></a>
+            </div>
+        </div>
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
